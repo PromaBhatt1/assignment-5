@@ -57,14 +57,15 @@
                 <br>
                 <h1 class="mb-5 font-extrabold text-green-500 text-5xl">P Paribahan</h1>
                 <p class="mb-5">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
-                <button class="btn btn-primary bg-green-500 text-black border-none font-extrabold">Buy Tickets</button>
-              </div>
+                <a href="#paribahan"><button onclick="buyTickets()" class="btn bg-[#1DD100]"><span class="text-black">Buy
+                    Tickets</span></button></a>              
+                </div>
             </div>
           </div>
         </nav>
     </header>
     <main class="sm:container mx-auto lg:px-32">
-
+        <!-- BEST OFFER SECTION -->
         <section class="mt-40">
             <h1 class="text-3xl font-bold text-[#030712] text-center mb-16">Best offers for you</h1>
             <div class="flex flex-row flex-1 gap-6">
@@ -105,39 +106,60 @@
               <button class="btn btn-outline text-[#1DD100]">See All Offers</button>
             </div>
           </section>
-
-
-
-
-
-        <!-- BEST OFFER SECTION
-        <section class="mt-40">
-            <h1 class="font-extrabold text-3xl text-center">Best offers for you</h1>
-            <div class="flex gap-10 w-full mt-24">
-                <div>
-                    <img src="./images/Group 113.png" alt="">
-                </div> -->
-                <!-- <div class="bg-yellow-500 text-left">
-                    <h1>15% OFF</h1>
-                    <h3>on your next purchase</h3>
-                    <p>use by January 2024</p> -->
-                <!-- </div>
-                <div class="bg-pink-300">
-                    <h1>20% OFF</h1>
-                    <h3>on your next purchase</h3>
-                    <p>use by January 2024</p>
-                </div>
-            </div>
-            <div class="flex items-center justify-center mt-12">
-                <button class="border-green-600 border-2 rounded-md p-3 text-green-500">See All Offers</button>
-            </div>
-        </section> -->
         <!-- P.H Paribahan SECTION -->
-        <section class="mt-40 border-2 rounded-lg border-green-400">
-            <div>
+        <section id="paribahan" class="px-32 pt-28 mt-28 bg-[#F7F8F8]  rounded-t-[88px]">
+            <!-- main div  -->
+            <div class="bg-white rounded-3xl py-8">
                 <h1 class="font-extrabold text-3xl pt-20 pb-10 text-center">P.H Paribahan</h1>
                 <p class="text-center">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined.</p>
-                <div>
+                <!-- two more div  -->
+                <div class="flex flex-row">
+                    <div class="flex flex-row gap-2">
+                        <div class="pl-4 pt-10">
+                            <img src="./images/bus-logo.png" alt="">
+                        </div>
+                        <div>
+                            <h1 class="font-bold text-3xl">Greenline Paribahan</h1>
+                            <p class="pb-6">Coach-009-WEB ! AC_Business</p>
+                            <div class="bg-gray-100 border-s-orange-600 rounded-xl p-5">
+                                <div class="flex flex-row flex-1 justify-between pb-3">
+                                  <p>Route</p>
+                                  <p>Dhaka - Sylhet</p>
+                                </div>
+                                <hr class="pb-5">
+                                <div class="flex flex-row flex-1 justify-between pb-3">
+                                  <p>Departure Time</p>
+                                  <p>9:00 PM</p>
+                                </div>
+                                <hr class="pb-5">
+                                <div class="grid lg:grid-cols-3 justify-around gap-10">
+                                  <button class="bg-gray-300  h-8 rounded-lg">Boarding Point - Laxmipur</button>
+                                  <button class="bg-gray-300 h-8 rounded-lg">Dropping Point - Bogura</button>
+                                  <button class="bg-gray-300 h-8 rounded-lg">Est. Time - 11 Hour</button>
+                                </div>
+                              </div>
+                            </div>
+                
+                            <div>
+                              <a id="left-seats" class="btn bg-[#1dd1001a] text-[#1DD100] "><span><img src="images/seat-green.png"
+                                    alt=""></span>8 Seats left</a>
+                
+                            </div>
+                          </div>
+                
+                          <!-- 550tk div -->
+                          <div class=" flex-1 w-32 ml-10 pt-20">
+                            <img src="images/fare.png" alt="">
+                            <h1 class="font-bold text-2xl pt-4 "><span class="add-btn">550</span> Taka</h1>
+                            <p class="font-semibold text-xl">Per Seat</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+                <!-- <div>
                     <div class="m-8">
                         <div class="flex">
                             <img src="./images/bus-logo.png" alt=""> 
@@ -168,8 +190,7 @@
                     <img src="./images/fare.png" alt="">
                     <h1 class="font-extrabold">550 Taka</h1>
                     <p class="font-light">Per Seat</p>
-                </div>
-            </div>
+                </div> -->
         </section>
     </main>
     <!-- FOOTER SECTION  -->
