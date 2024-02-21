@@ -11,9 +11,6 @@
 <!-- custom css -->
 <link rel="stylesheet" href="styles/style.css">
 
-<!-- ICONS  -->
-
-
 </head>
 <body class="font-raleway font-inter">
     <header class="sm:container mx-auto lg:px-32">
@@ -64,7 +61,7 @@
           </div>
         </nav>
     </header>
-    <main class="">
+    <main>
         <!-- BEST OFFER SECTION -->
         <section class="sm:container mx-auto lg:px-32 mt-40">
             <h1 class="text-3xl font-bold text-[#030712] text-center mb-16">Best offers for you</h1>
@@ -147,7 +144,7 @@
                           <!-- 550tk div -->
                           <div class=" flex-1 w-32 ml-10 pt-20">
                             <img src="images/fare.png" alt="">
-                            <h1 class="font-bold text-2xl pt-4 "><span class="add-btn">550</span> Taka</h1>
+                            <h1 class="font-bold text-2xl pt-4 "><span class="">550</span> Taka</h1>
                             <p class="font-semibold text-xl">Per Seat</p>
                         </div>
                     </div>
@@ -232,7 +229,7 @@
                 <div class="bg-gray-100 pl-10 rounded-xl mr-10">
 
                     <div class="grid lg:grid-cols-3 mt-6 pt-5">
-                        <div class="font-medium flex flex-row">
+                        <div class="font-medium flex flex-row gap-2.5">
                             <span class="add-seat">Seat</span>
                             <button id="counted-seat" class="bg-green-500 w-8 rounded-xl text-white"></button>
                         </div>
@@ -244,27 +241,29 @@
                         </div>
                     </div>
                     <hr class="my-5">
-                    <div class="grid lg:grid-cols-3 mt-6 ">
-                        <div>
-                          <ul id="selected-seat" class="selected-seat">
-                            <li class="grid grid-cols-3">
-                              <p></p>
-                              <p></p>
-                              <p></p>
-                            </li>
-          
-                          </ul>
-                        </div>
+                    <!-- <div id="add-seat-economy-price"></div> -->
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-x-6 gap-y-4 mt-6 w-full ">
+                      <p id="button-value" class="text-sm"></p>
+                      <p id="seat-class" class="text-sm"></p>
+                      <p id="price" class="text-sm"></p>
                       </div>
                       <hr class="my-5">
                       <div>
                         <h4 class="font-medium">Total Price <span id="total-cost" class="pl-44 font-medium"> 0</span>BDT</h4>
                       </div>
                       <div class="my-4">
-                        <label class="input input-bordered flex items-center w-[350px]">
+                        <label id="coupon-label" class="input input-bordered flex items-center w-[350px]">
                           <input type="text" id="coupon" class="grow" placeholder="Have any coupon?" />
-                          <button id="apply-coupon-button" class="bg-[#1DD100] text-white w-24 h-10 text-center rounded-lg">Apply</button>
+                          <button id="apply-coupon-button" class="bg-[#1DD100] text-white w-24 h-10 text-center rounded-lg transition-colors duration-300 disabled:bg-gray-400 disabled:cursor-not-allowed">Apply</button>
                         </label>
+
+
+
+
+                        <!-- <label class="input input-bordered flex items-center w-[350px]">
+                          <input type="text" id="coupon" class="grow" placeholder="Have any coupon?" />
+                          <button id="apply-coupon-button" class="bg-[#1DD100] text-white w-24 h-10 text-center rounded-lg apply-btn">Apply</button>
+                        </label> -->
                       </div>
                       <div>
                         <h4 class="font-medium">Grand Total<span id="grand-total" class="pl-44 font-medium"> 0</span>BDT</h4>
