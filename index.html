@@ -140,7 +140,7 @@
                               </div>
                             </div>
                             <div class="pl-4 pt-10">
-                              <a id="left-seats" class="btn bg-[#1dd1001a] text-[#1DD100]"><span><img src="images/seat-green.png" alt=""></span>8 Seats left</a>
+                              <a id="left-seats" class="btn bg-[#1dd1001a] text-[#1DD100]"><span><img src="images/seat-green.png" alt=""></span>Seats left <span id="changeable-seat">8</span></a>
                             </div>
                           </div>
                 
@@ -210,7 +210,7 @@
                           <!-- vector png div -->
           <div class="flex flex-row justify-end py-6 pr-8"><button class="btn w-28"><img src="./images/Vector.png" alt=""></button></div>
           <!-- A BUTTONS  -->
-          <div class="grid lg:grid-cols-4 pb-6">
+          <div class="grid lg:grid-cols-4 pb-6 same-button-class">
             <div>
                 <button id="a-one" class="btn w-28 add-btn">A1</button>
                 </div>
@@ -219,7 +219,7 @@
             <div><button id="a-four" class="btn w-28 add-btn">A4</button></div>
           </div>
           <!-- B BUTTONS  -->
-          <div class="grid lg:grid-cols-4">
+          <div class="grid lg:grid-cols-4 same-button-class">
             <div><button id="b-one" class="btn w-28 add-btn">B1</button></div>
             <div><button id="b-two" class="btn w-28 add-btn">B2</button></div>
             <div><button id="b-three" class="btn w-28 add-btn">B3</button></div>
@@ -262,8 +262,8 @@
                       </div>
                       <div class="my-4">
                         <label class="input input-bordered flex items-center w-[350px]">
-                          <input type="text" class="grow" placeholder="Have any coupon?" />
-                          <button class="bg-[#1DD100] text-white w-24 h-10 text-center rounded-lg">Apply</button>
+                          <input type="text" id="coupon" class="grow" placeholder="Have any coupon?" />
+                          <button id="apply-coupon-button" class="bg-[#1DD100] text-white w-24 h-10 text-center rounded-lg">Apply</button>
                         </label>
                       </div>
                       <div>
