@@ -46,7 +46,7 @@
                 </div>
               </div>
               <!-- BANNER -->
-        <div class="hero min-h-screen mt-10 rounded-3xl" style=" background-image: url(./images/banner.png);">
+        <div class="hero min-h-screen mt-10" style=" background-image: url(./images/banner.png);">
             <div class="hero-overlay"></div>
             <div class="hero-content text-center text-neutral-content">
               <div class="max-w-md">
@@ -110,8 +110,10 @@
                 <h1 class="font-extrabold text-3xl pt-20 pb-10 text-center">P.H Paribahan</h1>
                 <p class="text-center">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined.</p>
                 <!-- two div  -->
+                <div>
                 <div class="flex flex-row">
                     <div class="flex flex-row gap-2">
+                    
                         <div class="pl-4 pt-10">
                             <img src="./images/bus-logo.png" alt="">
                         </div>
@@ -135,6 +137,7 @@
                                   <button class="bg-gray-300 h-8 rounded-lg">Est. Time - 11 Hour</button>
                                 </div>
                               </div>
+                              
                             </div>
                             <div class="pl-4 pt-10">
                               <a id="left-seats" class="btn bg-[#1dd1001a] text-[#1DD100]"><span><img src="images/seat-green.png" alt=""></span>Seats left <span id="changeable-seat">8</span></a>
@@ -241,7 +244,6 @@
                         </div>
                     </div>
                     <hr class="my-5">
-                    <!-- <div id="add-seat-economy-price"></div> -->
                     <div class="grid grid-cols-1 lg:grid-cols-3 gap-x-6 gap-y-4 mt-6 w-full ">
                       <p id="button-value" class="text-sm"></p>
                       <p id="seat-class" class="text-sm"></p>
@@ -256,14 +258,6 @@
                           <input type="text" id="coupon" class="grow" placeholder="Have any coupon?" />
                           <button id="apply-coupon-button" class="bg-[#1DD100] text-white w-24 h-10 text-center rounded-lg transition-colors duration-300 disabled:bg-gray-400 disabled:cursor-not-allowed">Apply</button>
                         </label>
-
-
-
-
-                        <!-- <label class="input input-bordered flex items-center w-[350px]">
-                          <input type="text" id="coupon" class="grow" placeholder="Have any coupon?" />
-                          <button id="apply-coupon-button" class="bg-[#1DD100] text-white w-24 h-10 text-center rounded-lg apply-btn">Apply</button>
-                        </label> -->
                       </div>
                       <div>
                         <h4 class="font-medium">Grand Total<span id="grand-total" class="pl-44 font-medium"> 0</span>BDT</h4>
@@ -289,18 +283,6 @@
             </div>
         </section>
     </main>
-    <!-- FOOTER SECTION  -->
-        <footer class="footer p-10 bg-black text-white">
-            <div class="p-10">
-                <h1 class="font-extrabold text-2xl">P-Tickets</h1>
-                <p class="font-extralight">P-Ticket is a digital platform to make your daily commuting better.</p>
-            </div> 
-            <nav>
-              <h5 class="font-bold">Download our app</h5>
-              <a class="border-2"><img src="./images/playstore.png" alt="">Get it on<br>Google Play</a>
-              </div>
-            </nav>
-          </footer>
           <script src="scripts/script.js"></script>
 </body>
 </html>
